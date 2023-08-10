@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="Vatu PHP Compatibility Config">
+
+	<description>Apply PHP Compatibility checks to all project files.</description>
+
+	<!-- Only scan PHP files. -->
+	<arg name="extensions" value="php"/>
+
+</ruleset>

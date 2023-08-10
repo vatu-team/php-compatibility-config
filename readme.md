@@ -1,5 +1,7 @@
 # Vatu PHP Compatibility Config
 
+[![Commit](https://github.com/vatu-team/php-compatibility-config/actions/workflows/commit.yml/badge.svg)](https://github.com/vatu-team/php-compatibility-config/actions/workflows/commit.yml)
+
 This package provides a configuration file for [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) to be used to check projects against versions of PHP.
 
 ## Install

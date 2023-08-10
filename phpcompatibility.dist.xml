@@ -180,6 +180,20 @@
 		</rule>
 
 		<!--
+			Guzzle (https://github.com/guzzle/)
+		-->
+
+		<!--
+			False Positive:
+			Provides its own fallback for `each()`. See: https://github.com/guzzle/promises/blob/1.5/src/functions.php#L258
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecated">
+			<!-- Backwards Compatibility: PHP <= 7.4 && Guzzle <= 1.5 -->
+			<exclude-pattern>*vendor\/guzzlehttp\/promises\/src\/functions\.php$</exclude-pattern>
+			<exclude-pattern>*vendor\/guzzlehttp\/promises\/src\/Utils\.php$</exclude-pattern>
+		</rule>
+
+		<!--
 			Gravity Forms
 		-->
 		<!-- False Positive: Used as fallback provided for backwards compatibility. -->

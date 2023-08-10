@@ -22,4 +22,161 @@
 		<severity>0</severity>
 	</rule>
 
+	<rule ref="PHPCompatibility" />
+
+		<!--
+			WordPress (https://wordpress.org)
+		-->
+
+		<!--
+			PHPCompatibilityParagonieSodiumCompat prevents false positives in `sodium_compat`.
+			However, because these files are included in a non-standard path, false positives are triggered in WordPress Core.
+		-->
+		<exclude-pattern>*wp-includes\/sodium_compat\/lib\/php72compat_const\.php$</exclude-pattern>
+		<exclude-pattern>*wp-includes\/sodium_compat\/src\/Compat\.php$</exclude-pattern>
+
+		<rule ref="PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/wp-db\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+			<!-- WordPress Core funcations starting with `mysql_`. -->
+			<exclude-pattern>*wp-includes\/rest-api\/endpoints\/class-wp-rest-comments-controller\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/rest-api\/endpoints\/class-wp-rest-global-styles-revisions-controller\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/rest-api\/endpoints\/class-wp-rest-revisions-controller\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/rest-api\/endpoints\/class-wp-rest-posts-controller\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/rest-api\/endpoints\/class-wp-rest-templates-controller\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_set_charsetDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_queryDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_resultDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_select_dbDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_real_escape_stringDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_errorDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_free_resultDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_connectDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_pingDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_errnoDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_affected_rowsDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_insert_idDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_fetch_objectDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_client_encodingDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_num_fieldsDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_fetch_fieldDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_closeDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_get_server_infoDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_get_client_infoDeprecatedRemoved">
+			<exclude-pattern>*wp-includes\/class-wpdb\.php$</exclude-pattern>
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-admin\/includes\/class-wp-debug-data\.php$</exclude-pattern>
+			<exclude-pattern>*wp-admin\/includes\/class-wp-site-health\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.IniDirectives.RemovedIniDirectives.mbstring_func_overloadDeprecatedRemoved">
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-includes\/functions\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/pomo\/streams\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/ID3\/getid3\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/PHPMailer\/PHPMailer\.php$</exclude-pattern>
+			<exclude-pattern>*wp-includes\/sodium_compat\/src\/Core\/Util\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved">
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-includes\/ID3\/getid3\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionDeclarations.RemovedCallingDestructAfterConstructorExit.Found">
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-includes\/class-simplepie\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved">
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-includes\/ID3\/getid3\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.libxml_disable_entity_loaderDeprecated">
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-includes\/ID3\/getid3\.lib\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.Constants.RemovedConstants.intl_idna_variant_2003DeprecatedRemoved">
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-includes\/PHPMailer\/PHPMailer\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.libxml_disable_entity_loaderDeprecated">
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-includes\/class-wp-oembed\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.openssl_pkey_freeDeprecated">
+			<!-- Backwards Compatibility Requirments. -->
+			<exclude-pattern>*wp-includes\/PHPMailer\/PHPMailer\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.strftimeDeprecated">
+			<!-- Backwards Compatibility < PHP9.0 -->
+			<exclude-pattern>*wp-includes\/PHPMailer\/PHPMailer\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.IniDirectives.RemovedIniDirectives.auto_detect_line_endingsDeprecated">
+			<!-- Backwards Compatibility < PHP9.0 -->
+			<exclude-pattern>*wp-includes\/pomo\/po\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

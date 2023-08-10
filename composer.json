@@ -1,0 +1,32 @@
+{
+    "name": "vatu/php-compatibility-config",
+    "description": "This package provides a configuration file for PHP Compatibility to be used to check projects against versions of PHP.",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Bragg",
+            "email": "mike@vatu.dev"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "phpcsstandards/phpcsdevtools": "^1.0",
+        "phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+      "tests" :[
+        "vendor/bin/phpcs ./tests/index.php --standard=phpcompatibility.dist.xml"
+      ],
+      "phpcs-config": [
+        "vendor/bin/phpcs --config-set ignore_warnings_on_exit 1"
+      ]
+    }
+}

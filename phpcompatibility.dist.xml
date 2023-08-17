@@ -194,6 +194,14 @@
 		</rule>
 
 		<!--
+			HTML Purifier (https://github.com/ezyang/htmlpurifier)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved">
+			<!-- Backwards Compatibility: PHP <= 7.4 -->
+			<exclude-pattern>*ezyang\/htmlpurifier\/library\/HTMLPurifier\/Config\.php$</exclude-pattern>
+		</rule>	
+
+		<!--
 			Gravity Forms
 		-->
 		<!-- False Positive: Used as fallback provided for backwards compatibility. -->

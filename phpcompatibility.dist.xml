@@ -199,7 +199,16 @@
 		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved">
 			<!-- Backwards Compatibility: PHP <= 7.4 -->
 			<exclude-pattern>*ezyang\/htmlpurifier\/library\/HTMLPurifier\/Config\.php$</exclude-pattern>
-		</rule>	
+		</rule>
+
+		<!--
+			Date Time Immutable Polyfill (https://github.com/jesseschalken/php-date-time-immutable-polyfill)
+			Download Monitier (Fork)
+		-->
+		<rule ref="PHPCompatibility.Interfaces.InternalInterfaces.datetimeinterfaceFound">
+			<!-- Backwards Compatibility: PHP < 5.5 -->
+			<exclude-pattern>*\/Polyfill\/DateTimeImmutable\/DateTimeImmutable\.php$</exclude-pattern>
+		</rule>
 
 		<!--
 			Gravity Forms

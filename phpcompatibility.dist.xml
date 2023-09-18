@@ -263,5 +263,17 @@
 		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecated">
 			<exclude-pattern>*plugins\/gravityforms\/forms_model\.php$</exclude-pattern>
 		</rule>
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved">
+			<!-- Backwards Compatibility: PHP <= 7.4 -->
+			<exclude-pattern>*plugins\/gravityforms\/forms_model\.php$</exclude-pattern>
+		</rule>
+
+		<!--
+			Google Site Kit (https://wordpress.org/plugins/google-site-kit/)
+		-->
+		<exclude-pattern>*google-site-kit\/third-party\/symfony\/polyfill-intl-idn\/</exclude-pattern>
+		<exclude-pattern>*google-site-kit\/third-party\/symfony\/polyfill-intl-normalizer\/</exclude-pattern>
+		<exclude-pattern>*google-site-kit\/third-party\/symfony\/polyfill-php70\/</exclude-pattern>
+		<exclude-pattern>*google-site-kit\/third-party\/symfony\/polyfill-php72\/</exclude-pattern>
 
 </ruleset>

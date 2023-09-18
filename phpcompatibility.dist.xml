@@ -276,4 +276,16 @@
 		<exclude-pattern>*google-site-kit\/third-party\/symfony\/polyfill-php70\/</exclude-pattern>
 		<exclude-pattern>*google-site-kit\/third-party\/symfony\/polyfill-php72\/</exclude-pattern>
 
+		<!--
+			Add Search to Menu (https://wordpress.org/plugins/add-search-to-menu/)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_get_server_infoDeprecatedRemoved">
+			<!-- Backwards Compatibility: PHP <= 7.0 -->
+			<exclude-pattern>*\/add-search-to-menu\/public\/class-is-public\.php$</exclude-pattern>
+		</rule>
+		<rule ref="PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved">
+			<!-- Backwards Compatibility: PHP <= 7.0 -->
+			<exclude-pattern>*\/add-search-to-menu\/public\/class-is-public\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

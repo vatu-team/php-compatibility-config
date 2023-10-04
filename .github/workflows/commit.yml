@@ -36,7 +36,7 @@ jobs:
         run: wget https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd
 
       - name: 'Get lint information.'
-        uses: 'korelstar/xmllint-problem-matcher@v1.1.0'
+        uses: 'korelstar/xmllint-problem-matcher@v1.2.0'
 
       - name: 'Run XML Lint tests.'
         uses: 'ChristophWurst/xmllint-action@v1.1'

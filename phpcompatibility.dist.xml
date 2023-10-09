@@ -277,6 +277,7 @@
 		<!--
 			Symfony Polyfill (https://github.com/symfony/)
 		-->
+		<exclude-pattern>*\/symfony\/polyfill-mbstring\/</exclude-pattern>
 		<exclude-pattern>*\/symfony\/polyfill-intl-idn\/</exclude-pattern>
 		<exclude-pattern>*\/symfony\/polyfill-intl-normalizer\/</exclude-pattern>
 		<exclude-pattern>*\/symfony\/polyfill-php70\/</exclude-pattern>

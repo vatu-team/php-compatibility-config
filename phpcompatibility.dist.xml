@@ -294,4 +294,13 @@
 			<exclude-pattern>*\/add-search-to-menu\/public\/class-is-public\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			Nextend Framework (https://wordpress.org/plugins/smart-slider-3/)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved">
+			<!-- Backwards Compatibility: PHP <= 7.0 -->
+			<exclude-pattern>*\/Nextend\/Framework\/Url\/UrlHelper\.php$</exclude-pattern>
+		</rule>
+
+
 </ruleset>

@@ -308,5 +308,12 @@
 			<exclude-pattern>*\/Nextend\/Framework\/Url\/UrlHelper\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			Gravity Forms PDF Extended (https://wordpress.org/plugins/gravity-forms-pdf-extended/)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved">
+			<!-- Function deprecated: PHP <= 7.04 -->
+			<exclude-pattern>*\/gravitypdf\/querypath\/src\/Helpers\/QueryFilters\.php$</exclude-pattern>
+		</rule>
 
 </ruleset>

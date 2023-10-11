@@ -324,5 +324,36 @@
 		<exclude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Hash\.php$</exclude-pattern>
 		<exlcude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Base\.php$</exclude-pattern>
 
+		<!--
+			Updraft (https://wordpress.org/plugins/updraftplus/)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_fetch_arrayDeprecatedRemoved">
+		<!-- Legacy ignore rule supplied. -->
+		<exclude-pattern>*\/updraftplus\/includes\/class-search-replace\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_free_resultDeprecatedRemoved">
+		<!-- Legacy ignore rule supplied. -->
+		<exclude-pattern>*\/updraftplus\/includes\/class-search-replace\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_queryDeprecatedRemoved">
+		<!-- Legacy ignore rule supplied. -->
+		<exclude-pattern>*\/updraftplus\/includes\/class-search-replace\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_errorDeprecatedRemoved">
+		<!-- Legacy ignore rule supplied. -->
+		<exclude-pattern>*\/updraftplus\/includes\/class-search-replace\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_pingDeprecatedRemoved">
+		<!-- Legacy ignore rule supplied. -->
+		<exclude-pattern>*\/updraftplus\/class-updraftplus\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.ArgumentFunctionsReportCurrentValue.Changed">
+		<exclude-pattern>*\/updraftplus\/includes\/updraft-restorer-skin\.php$</exclude-pattern>
+		</rule>
 
 </ruleset>

@@ -322,7 +322,7 @@
 			in since PHP 7.2.
 		-->
 		<exclude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Hash\.php$</exclude-pattern>
-		<exlcude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Base\.php$</exclude-pattern>
+		<exclude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Base\.php$</exclude-pattern>
 
 		<!--
 			Updraft (https://wordpress.org/plugins/updraftplus/)

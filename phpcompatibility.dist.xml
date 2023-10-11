@@ -361,4 +361,13 @@
 		<exclude-pattern>*\/updraftplus\/includes\/admin\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			Google Sitemap Generator (https://wordpress.org/plugins/google-sitemap-generator/)
+		-->
+
+		<rule ref="PHPCompatibility.FunctionUse.ArgumentFunctionsReportCurrentValue.Changed">
+		<!-- Function used for development purposes. -->
+		<exclude-pattern>*\/google-sitemap-generator\/sitemap-core\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

@@ -316,4 +316,13 @@
 			<exclude-pattern>*\/gravitypdf\/querypath\/src\/Helpers\/QueryFilters\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			PHPSecLib (https://github.com/phpseclib/phpseclib)
+			Library checks if the module is installed. Module has been removed
+			in since PHP 7.2.
+		-->
+		<exclude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Hash\.php$</exclude-pattern>
+		<exlcude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Base\.php$</exclude-pattern>
+
+
 </ruleset>

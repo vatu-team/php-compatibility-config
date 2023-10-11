@@ -370,4 +370,14 @@
 		<exclude-pattern>*\/google-sitemap-generator\/sitemap-core\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			Stripe PHP (https://github.com/stripe/stripe-php)
+		-->
+
+		<rule ref="PHPCompatibility.FunctionUse.ArgumentFunctionsReportCurrentValue.Changed">
+			<!-- Used for debug purposes. -->
+			<exclude-pattern>*\/stripe-php\/lib\/HttpClient\/CurlClient\.php$</exclude-pattern>
+		</rule>
+
+
 </ruleset>

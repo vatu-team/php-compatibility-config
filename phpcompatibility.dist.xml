@@ -357,4 +357,8 @@
 		<exclude-pattern>*\/updraftplus\/includes\/updraft-restorer-skin\.php$</exclude-pattern>
 		</rule>
 
+		<rule ref="PHPCompatibility.ParameterValues.ChangedIntToBoolParamType.ob_implicit_flush_enableNumericFound">
+		<exclude-pattern>*\/updraftplus\/includes\/admin\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

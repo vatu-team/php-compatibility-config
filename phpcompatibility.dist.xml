@@ -411,4 +411,12 @@
 			<exclude-pattern>*\/PCLZip/pclzip\.lib\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			ATUM WooCommerce Inventory Management and Stock Tracking (https://wordpress.org/plugins/atum-stock-manager-for-woocommerce/)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved">
+			<!-- False positive. Files not used. -->
+			<exclude-pattern>*\/setasign\/fpdi\/fpdi\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

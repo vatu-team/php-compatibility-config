@@ -383,7 +383,7 @@
 			Nesbot Carbon (https://github.com/briannesbitt/Carbon/)
 		-->
 
-		<rule ref="PHPCompatibility.Interfaces.InternalInterfaces.datetimeinterfaceFound)">
+		<rule ref="PHPCompatibility.Interfaces.InternalInterfaces.datetimeinterfaceFound">
 			<!-- Issue is a warning. -->
 			<exclude-pattern>*\/nesbot\/carbon\/src\/Carbon\/CarbonInterface\.php$</exclude-pattern>
 		</rule>

@@ -328,6 +328,11 @@
 		<exclude-pattern>*\/PHPSecLib\/Crypt\/Base\.php$</exclude-pattern>
 		<exclude-pattern>*\/PHPSecLib\/Crypt\/Random\.php$</exclude-pattern>
 
+		<rule ref="PHPCompatibility.FunctionDeclarations.NewParamTypeDeclarations.InvalidTypeHintFound">
+		<!-- PHPSecLib Provides a Custon Interger type. -->
+		<exclude-pattern>*\/phpseclib\/phpseclib\/phpseclib\/Crypt\/EC\/BaseCurves\/Prime\.php$</exclude-pattern>
+		</rule>
+
 		<!--
 			Updraft (https://wordpress.org/plugins/updraftplus/)
 		-->

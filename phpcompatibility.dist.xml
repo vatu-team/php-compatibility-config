@@ -388,4 +388,12 @@
 			<exclude-pattern>*\/nesbot\/carbon\/src\/Carbon\/CarbonInterface\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			WordFence (https://wordpress.org/plugins/wordfence/)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_gpcDeprecatedRemoved">
+			<!-- Backwards compatibility / Legacy ignore syntax. -->
+			<exclude-pattern>*\/wordfence\/wf-waf\/src\/lib\/utils\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

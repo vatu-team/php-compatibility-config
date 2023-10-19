@@ -395,5 +395,9 @@
 			<!-- Backwards compatibility / Legacy ignore syntax. -->
 			<exclude-pattern>*\/wordfence\/wf-waf\/src\/lib\/utils\.php$</exclude-pattern>
 		</rule>
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_errnoDeprecatedRemoved">
+			<!-- Backwards compatibility / Legacy ignore syntax. -->
+			<exclude-pattern>*\/wordfence\/lib\/wfConfig\.php$</exclude-pattern>
+		</rule>
 
 </ruleset>

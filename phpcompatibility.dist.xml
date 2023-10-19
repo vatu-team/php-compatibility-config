@@ -403,4 +403,12 @@
 			<exclude-pattern>*\/wordfence\/lib\/wfConfig\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			PCLZip (#)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved">
+			<!-- Has check for funciton wrapper. -->
+			<exclude-pattern>*\/PCLZip/pclzip\.lib\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

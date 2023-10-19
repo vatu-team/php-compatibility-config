@@ -424,7 +424,7 @@
 		-->
 		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecatedRemoved">
 			<!-- For Backwards Compatibility with WC <3.7. -->
-			<exclude-pattern>*\/woocommerce-subscriptions\/includes\/admin\/reports/class-wcs-report-subscription-events-by-date\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-subscriptions\/includes\/admin\/reports\/class-wcs-report-subscription-events-by-date\.php$</exclude-pattern>
 		</rule>
 
 </ruleset>

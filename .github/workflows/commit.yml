@@ -39,7 +39,7 @@ jobs:
         uses: 'korelstar/xmllint-problem-matcher@v1.2.0'
 
       - name: 'Run XML Lint tests.'
-        uses: 'ChristophWurst/xmllint-action@v1.1'
+        uses: 'ChristophWurst/xmllint-action@v1.2'
         with:
           xml-file: ./phpcompatibility.dist.xml
           xml-schema-file: ./phpcs.xsd

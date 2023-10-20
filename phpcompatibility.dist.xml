@@ -435,4 +435,11 @@
 			<exclude-pattern>*\/woocommerce-subscriptions\/includes\/admin\/reports\/class-wcs-report-subscription-events-by-date\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			AWS CRT
+		-->
+		<rule ref="PHPCompatibility.Variables.ForbiddenThisUseContexts.Unset">
+			<exclude-pattern>*\/aws\/aws-crt-php\/src\/AWS\/CRT\/NativeResource\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

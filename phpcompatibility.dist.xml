@@ -385,7 +385,10 @@
 		<rule ref="PHPCompatibility.FunctionUse.ArgumentFunctionsReportCurrentValue.Changed">
 			<!-- Used for debug purposes. -->
 			<exclude-pattern>*\/stripe-php\/lib\/HttpClient\/CurlClient\.php$</exclude-pattern>
+			<exclude-pattern>*\/stripe\/lib\/HttpClient\/CurlClient\.php$</exclude-pattern>
 		</rule>
+
+
 
 		<!--
 			Nesbot Carbon (https://github.com/briannesbitt/Carbon/)

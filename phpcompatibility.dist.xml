@@ -442,4 +442,12 @@
 			<exclude-pattern>*\/aws\/aws-crt-php\/src\/AWS\/CRT\/NativeResource\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			Download Monitor (wordpress.org/plugins/download-monitor/)
+		-->
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved">
+			<!-- For Backwards Compatibility with PHP < 7.4. -->
+			<exclude-pattern>*\/download-monitor\/src\/DownloadHandler\.php$</exclude-pattern>
+		</rule>
+
 </ruleset>

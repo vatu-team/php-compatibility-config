@@ -499,4 +499,11 @@
 			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
 		</rule>
 
+		<!--
+			ACF Extended (#)
+		-->
+	<rule ref="PHPCompatibility.FunctionUse.ArgumentFunctionsReportCurrentValue.Changed">
+		<exclude-pattern>*\/acf-extended\/includes\/module\.php$</exclude-pattern>
+	</rule>
+
 </ruleset>

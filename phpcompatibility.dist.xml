@@ -461,34 +461,42 @@
 		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mcrypt_encryptDeprecatedRemoved">
 			<!-- For Backwards Compatibility with PHP <= 7.0. -->
 			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
 		</rule>
 		<rule ref="PHPCompatibility.Extensions.RemovedExtensions.mcryptDeprecatedRemoved">
 			<!-- For Backwards Compatibility with PHP <= 7.0. -->
 			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
 		</rule>
 		<rule ref="PHPCompatibility.Constants.RemovedConstants.mcrypt_rijndael_128DeprecatedRemoved">
 			<!-- For Backwards Compatibility with PHP <= 7.0. -->
 			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
-		</rule>
-				<rule ref="PHPCompatibility.Constants.RemovedConstants.mcrypt_mode_cbcDeprecatedRemoved">
-			<!-- For Backwards Compatibility with PHP <= 7.0. -->
-			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
-		</rule>
-				<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mcrypt_decryptDeprecatedRemoved">
-			<!-- For Backwards Compatibility with PHP <= 7.0. -->
-			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
-		</rule>
-		<rule ref="PHPCompatibility.Extensions.RemovedExtensions.mcryptDeprecatedRemoved">
-			<!-- For Backwards Compatibility with PHP <= 7.0. -->
-			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
-		</rule>
-		<rule ref="PHPCompatibility.Constants.RemovedConstants.mcrypt_rijndael_128DeprecatedRemoved">
-			<!-- For Backwards Compatibility with PHP <= 7.0. -->
-			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
 		</rule>
 		<rule ref="PHPCompatibility.Constants.RemovedConstants.mcrypt_mode_cbcDeprecatedRemoved">
 			<!-- For Backwards Compatibility with PHP <= 7.0. -->
 			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
+		</rule>
+				<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mcrypt_decryptDeprecatedRemoved">
+			<!-- For Backwards Compatibility with PHP <= 7.0. -->
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
+		</rule>
+		<rule ref="PHPCompatibility.Extensions.RemovedExtensions.mcryptDeprecatedRemoved">
+			<!-- For Backwards Compatibility with PHP <= 7.0. -->
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
+		</rule>
+		<rule ref="PHPCompatibility.Constants.RemovedConstants.mcrypt_rijndael_128DeprecatedRemoved">
+			<!-- For Backwards Compatibility with PHP <= 7.0. -->
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
+		</rule>
+		<rule ref="PHPCompatibility.Constants.RemovedConstants.mcrypt_mode_cbcDeprecatedRemoved">
+			<!-- For Backwards Compatibility with PHP <= 7.0. -->
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-common-functions-class\.php$</exclude-pattern>
+			<exclude-pattern>*\/woocommerce-gateway-sagepay-form\/classes\/sagepay-form-class\.php$</exclude-pattern>
 		</rule>
 
 </ruleset>

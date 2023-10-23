@@ -450,4 +450,11 @@
 			<exclude-pattern>*\/download-monitor\/src\/DownloadHandler\.php$</exclude-pattern>
 		</rule>
 
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.set_magic_quotes_runtimeDeprecatedRemoved">
+			<!-- For Backwards Compatibility with PHP < 7.4. -->
+			<exclude-pattern>*\/download-monitor\/src\/DownloadHandler\.php$</exclude-pattern>
+		</rule>
+
+
+
 </ruleset>

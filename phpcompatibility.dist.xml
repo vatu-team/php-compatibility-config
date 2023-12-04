@@ -324,6 +324,7 @@
 		<exclude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Hash\.php$</exclude-pattern>
 		<exclude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Base\.php$</exclude-pattern>
 		<exclude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Random\.php$</exclude-pattern>
+		<exclude-pattern>*\/phpseclib\/phpseclib\/Crypt\/Common/\SymmetricKey\.php$</exclude-pattern>
 		<exclude-pattern>*\/PHPSecLib\/Crypt\/Hash\.php$</exclude-pattern>
 		<exclude-pattern>*\/PHPSecLib\/Crypt\/Base\.php$</exclude-pattern>
 		<exclude-pattern>*\/PHPSecLib\/Crypt\/Random\.php$</exclude-pattern>

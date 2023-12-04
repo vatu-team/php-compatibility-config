@@ -515,4 +515,12 @@
 		<exclude-pattern>*\/wpai-woocommerce-add-on\/controllers\/controller\/admin\.php$</exclude-pattern>
 	</rule>
 
+	<!--
+		WP Desk / WP Plugin Flow
+	-->
+	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved">
+		<!-- For Backwards Compatibility with PHP <= 7.2. -->
+		<exclude-pattern>*\/wpdesk\/wp-plugin-flow-common\/src\/plugin-init-php52\.php$</exclude-pattern>
+	</rule>
+
 </ruleset>

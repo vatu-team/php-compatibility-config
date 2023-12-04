@@ -507,4 +507,12 @@
 		<exclude-pattern>*\/acf-extended\/includes\/module\.php$</exclude-pattern>
 	</rule>
 
+		<!--
+			WP All Import WooCommerce Add-on
+		-->
+	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved">
+		<!-- For Backwards Compatibility with PHP <= 7.0. -->
+		<exclude-pattern>*\/wpai-woocommerce-add-on\/controllers\/controller\/admin\.php$</exclude-pattern>
+	</rule>
+
 </ruleset>

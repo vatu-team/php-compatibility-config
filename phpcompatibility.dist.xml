@@ -523,4 +523,20 @@
 		<exclude-pattern>*\/wpdesk\/wp-plugin-flow-common\/src\/plugin-init-php52\.php$</exclude-pattern>
 	</rule>
 
+	<!--
+		WooCommerce Customer Order CSV Export
+	-->
+	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_queryDeprecatedRemoved">
+		<!-- For Backwards Compatibility with PHP <= 5.5. -->
+		<exclude-pattern>*\/woocommerce-customer-order-csv-export\/src\/data-stores\/database\/class-wc-customer-order-csv-export-data-store-database\.php$</exclude-pattern>
+	</rule>
+	<rule ref="PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved">
+		<!-- For Backwards Compatibility with PHP <= 5.5. -->
+		<exclude-pattern>*\/woocommerce-customer-order-csv-export\/src\/data-stores\/database\/class-wc-customer-order-csv-export-data-store-database\.php$</exclude-pattern>
+	</rule>
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.mysql_fetch_assocDeprecatedRemoved">
+		<!-- For Backwards Compatibility with PHP <= 5.5. -->
+		<exclude-pattern>*\/woocommerce-customer-order-csv-export\/src\/data-stores\/database\/class-wc-customer-order-csv-export-data-store-database\.php$</exclude-pattern>
+	</rule>
+
 </ruleset>

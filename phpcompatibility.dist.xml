@@ -507,9 +507,21 @@
 		<exclude-pattern>*\/acf-extended\/includes\/module\.php$</exclude-pattern>
 	</rule>
 
-		<!--
-			WP All Import WooCommerce Add-on
-		-->
+	<!--
+		WP All Import Pro
+	-->
+	<rule ref="PHPCompatibility.IniDirectives.RemovedIniDirectives.mysql_connect_timeoutRemoved">
+		<!-- Ignored by newer version. -->
+		<exclude-pattern>*\/wp-all-import-pro\/actions\/admin_init\.php$</exclude-pattern>
+	</rule>
+	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved">
+		<!-- For Backwards Compatibility with PHP <= 8.0. -->
+		<exclude-pattern>*\/wp-all-import-pro\/libraries\/wpaipclzip.lib\.php$</exclude-pattern>
+	</rule>
+
+	<!--
+		WP All Import WooCommerce Add-on
+	-->
 	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.create_functionDeprecatedRemoved">
 		<!-- For Backwards Compatibility with PHP <= 7.0. -->
 		<exclude-pattern>*\/wpai-woocommerce-add-on\/controllers\/controller\/admin\.php$</exclude-pattern>

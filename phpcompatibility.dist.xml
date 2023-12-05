@@ -551,4 +551,12 @@
 		<exclude-pattern>*\/woocommerce-customer-order-csv-export\/src\/data-stores\/database\/class-wc-customer-order-csv-export-data-store-database\.php$</exclude-pattern>
 	</rule>
 
+	<!--
+		Tickera Event Ticketing System
+	-->
+	<rule ref="PHPCompatibility.Numbers.RemovedHexadecimalNumericStrings.Found">
+		<!-- False positive, used for colour codes. -->
+		<exclude-pattern>*\/tickera-event-ticketing-system\/includes\/ticket-elements-new\/google_map_element\.php$</exclude-pattern>
+	</rule>
+
 </ruleset>

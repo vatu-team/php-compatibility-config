@@ -519,9 +519,9 @@
 		<exclude-pattern>*\/wp-all-import-pro\/libraries\/wpaipclzip.lib\.php$</exclude-pattern>
 	</rule>
 
-	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.get_magic_quotes_runtimeDeprecatedRemoved">
+	<rule ref="PHPCompatibility.FunctionUse.ArgumentFunctionsReportCurrentValue.Changed">
 		<!-- Debug use, Dependency abandonded -->
-			<exclude-pattern>*\/wp-all-import-pro\/classes\/PHPExcel\/*</exclude-pattern>
+		<exclude-pattern>*\/wp-all-import-pro\/classes\/PHPExcel\/*</exclude-pattern>
 		<exclude-pattern>*\/wp-all-export-pro\/classes\/PHPExcel\/*</exclude-pattern>
 	</rule>
 

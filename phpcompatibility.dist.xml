@@ -566,4 +566,11 @@
 		<exclude-pattern>*\/tickera-event-ticketing-system\/includes\/ticket-elements-new\/google_map_element\.php$</exclude-pattern>
 	</rule>
 
+	<!--
+		Google / Protobuf
+	-->
+	<rule ref="PHPCompatibility.Keywords.ForbiddenNames.extendsFound">
+		<!-- Class name is prefixed -->
+		<exclude-pattern>*\/google\/protobuf\/src\/Google\/Protobuf\/Enum\.php$</exclude-pattern>
+	</rule>
 </ruleset>

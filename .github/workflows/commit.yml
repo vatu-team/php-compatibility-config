@@ -30,7 +30,7 @@ jobs:
     steps:
 
       - name: 'Check out the repository.'
-        uses: 'actions/checkout@v4.2.0'
+        uses: 'actions/checkout@v4.2.1'
 
       - name: 'Download schema.'
         run: wget https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd

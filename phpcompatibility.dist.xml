@@ -573,4 +573,23 @@
 		<!-- Class name is prefixed -->
 		<exclude-pattern>*\/google\/protobuf\/src\/Google\/Protobuf\/Enum\.php$</exclude-pattern>
 	</rule>
+
+	<!--
+		Patchstack
+	-->
+	<rule ref="PHPCompatibility.Constants.RemovedConstants">
+		<!-- Backwards compatability -->
+		<exclude-pattern>*\/patchstack\/includes\/2fa\/polyfill\/lib\/</exclude-pattern>
+	</rule>
+
+	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions">
+		<!-- Backwards compatability -->
+		<exclude-pattern>*\/patchstack\/includes\/2fa\/polyfill\/lib\/</exclude-pattern>
+	</rule>
+
+	<rule ref="PHPCompatibility.Extensions.RemovedExtensions.">
+		<!-- Backwards compatability -->
+		<exclude-pattern>*\/patchstack\/includes\/2fa\/polyfill\/lib\/</exclude-pattern>
+	</rule>
+
 </ruleset>

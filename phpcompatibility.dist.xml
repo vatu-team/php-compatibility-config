@@ -587,7 +587,7 @@
 		<exclude-pattern>*\/patchstack\/includes\/2fa\/polyfill\/lib\/</exclude-pattern>
 	</rule>
 
-	<rule ref="PHPCompatibility.Extensions.RemovedExtensions.">
+	<rule ref="PHPCompatibility.Extensions.RemovedExtensions">
 		<!-- Backwards compatability -->
 		<exclude-pattern>*\/patchstack\/includes\/2fa\/polyfill\/lib\/</exclude-pattern>
 	</rule>

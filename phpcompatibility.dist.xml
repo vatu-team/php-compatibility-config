@@ -184,6 +184,11 @@
 			<exclude-pattern>*wp-includes\/pomo\/po\.php$</exclude-pattern>
 		</rule>
 
+		<rule ref="PHPCompatibility.FunctionUse.NewFunctions.stream_context_set_optionsFound">
+		<!-- Forwards Compatibility > PHP 8.4 -->
+			<exclude-pattern>*wp-includes\/Requests\/src\/Transport\/Fsockopen\.php$</exclude-pattern>
+		</rule>
+
 		<!--
 			Guzzle (https://github.com/guzzle/)
 		-->

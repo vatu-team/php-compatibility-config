@@ -29,9 +29,7 @@
 		-->
 
 		<rule ref="PHPCompatibilityParagonieSodiumCompat"/>
-
-		<exclude-pattern>*wp-includes\/sodium_compat\/lib\/php72compat_const\.php$</exclude-pattern>
-		<exclude-pattern>*wp-includes\/sodium_compat\/src\/Compat\.php$</exclude-pattern>
+		<exclude-pattern>*/wp-includes/sodium_compat\/</exclude-pattern>
 
 		<!--
 			Paragonie Random Compat.

@@ -28,15 +28,15 @@
 			WordPress (https://wordpress.org)
 		-->
 
-		<!--
-			PHPCompatibilityParagonieSodiumCompat prevents false positives in `sodium_compat`.
-			However, because these files are included in a non-standard path, false positives are triggered in WordPress Core.
-		-->
+		<rule ref="PHPCompatibilityParagonieSodiumCompat"/>
+
 		<exclude-pattern>*wp-includes\/sodium_compat\/lib\/php72compat_const\.php$</exclude-pattern>
 		<exclude-pattern>*wp-includes\/sodium_compat\/src\/Compat\.php$</exclude-pattern>
 
 		<!--
 			Paragonie Random Compat.
+			Since WP 4.4.0
+			Removed in WP 6.3.0
 		-->
 		<exclude-pattern>*\/paragonie\/random_compat\/</exclude-pattern>
 

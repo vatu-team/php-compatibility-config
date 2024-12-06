@@ -145,6 +145,7 @@
 		<rule ref="PHPCompatibility.FunctionDeclarations.RemovedCallingDestructAfterConstructorExit.Found">
 			<!-- Backwards Compatibility Requirments. -->
 			<exclude-pattern>*\/wp-includes\/class-simplepie\.php$</exclude-pattern>
+			<exclude-pattern>*\/wp-includes\/SimplePie\/src\/SimplePie\.php$</exclude-pattern>
 			<exclude-pattern>*\/wp-includes\/SimplePie\/src\/Item\.php$</exclude-pattern>
 		</rule>
 

@@ -1,7 +1,7 @@
 {
     "name": "vatu/php-compatibility-config",
     "description": "This package provides a configuration file for PHP Compatibility to be used to check projects against versions of PHP.",
-    "type": "metapackage",
+    "type": "phpcodesniffer-standard",
     "license": "MIT",
     "authors": [
         {

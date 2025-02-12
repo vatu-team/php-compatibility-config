@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	name="Vatu Guzzle"
+	namespace="Vatu/GuzzleHttp/Guzzle"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/PHPCSStandards/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<rule ref="PHPCompatibility" />
+
+	<!--
+		False Positive:
+		Provides its own fallback for `each()`. See: https://github.com/guzzle/promises/blob/1.5/src/functions.php#L258
+	-->
+	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.eachDeprecated">
+		<!-- Backwards Compatibility: PHP <= 7.4 && Guzzle <= 1.5 -->
+		<exclude-pattern>*\/guzzlehttp\/promises\/src\/functions\.php$</exclude-pattern>
+		<exclude-pattern>*\/guzzlehttp\/promises\/src\/Utils\.php$</exclude-pattern>
+	</rule>
+
+</ruleset>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	name="Vatu Patchstack"
+	namespace="Vatu/Patchstack/Patchstack"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/PHPCSStandards/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<rule ref="PHPCompatibility" />
+
+	<!--
+		Patchstack
+	-->
+	<rule ref="PHPCompatibility.Constants.RemovedConstants">
+		<!-- Backwards compatability -->
+		<exclude-pattern>*\/patchstack\/includes\/2fa\/polyfill\/lib\/</exclude-pattern>
+	</rule>
+
+	<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions">
+		<!-- Backwards compatability -->
+		<exclude-pattern>*\/patchstack\/includes\/2fa\/polyfill\/lib\/</exclude-pattern>
+	</rule>
+
+	<rule ref="PHPCompatibility.Extensions.RemovedExtensions">
+		<!-- Backwards compatability -->
+		<exclude-pattern>*\/patchstack\/includes\/2fa\/polyfill\/lib\/</exclude-pattern>
+	</rule>
+
+</ruleset>

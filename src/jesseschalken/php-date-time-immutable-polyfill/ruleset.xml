@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	name="Vatu PHP Date Time Immutable Polyfill"
+	namespace="Vatu/JesseSchalken/PhpDateTimeImmutablePolyfill"
+	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/PHPCSStandards/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<rule ref="PHPCompatibility" />
+
+	<!--
+		Date Time Immutable Polyfill (https://github.com/jesseschalken/php-date-time-immutable-polyfill)
+		Download Monitier (Fork)
+	-->
+	<rule ref="PHPCompatibility.Interfaces.InternalInterfaces.datetimeinterfaceFound">
+		<!-- Backwards Compatibility: PHP < 5.5 -->
+		<exclude-pattern>*\/Polyfill\/DateTimeImmutable\/DateTimeImmutable\.php$</exclude-pattern>
+	</rule>
+
+</ruleset>

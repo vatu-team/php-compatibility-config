@@ -189,6 +189,21 @@
 			<exclude-pattern>*wp-includes\/Requests\/src\/Transport\/Fsockopen\.php$</exclude-pattern>
 		</rule>
 
+		<rule ref="PHPCompatibility.Constants.RemovedConstants.intl_idna_variant_2003DeprecatedRemoved">
+			<!-- For Backwards Compatibility with PHP < 8.0. -->
+			<exclude-pattern>*\/wp-includes\/PHPMailer\/PHPMailer\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.imap_rfc822_parse_adrlistRemoved">
+			<!-- For Backwards Compatibility with PHP < 8.4. -->
+			<exclude-pattern>*\/wp-includes\/PHPMailer\/PHPMailer\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.RemovedFunctions.imap_errorsRemoved">
+			<!-- For Backwards Compatibility with PHP < 8.4. -->
+			<exclude-pattern>*\/wp-includes\/PHPMailer\/PHPMailer\.php$</exclude-pattern>
+	</rule>
+
 		<!--
 			Guzzle (https://github.com/guzzle/)
 		-->

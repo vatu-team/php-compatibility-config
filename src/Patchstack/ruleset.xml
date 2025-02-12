@@ -2,6 +2,7 @@
 <ruleset
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	name="Vatu Patchstack"
+	namespace="Vatu/Patchstack"
 	xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/PHPCSStandards/PHP_CodeSniffer/master/phpcs.xsd">
 
 	<description>Best practices beyond core WordPress Coding Standards</description>

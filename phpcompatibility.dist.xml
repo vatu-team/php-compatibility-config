@@ -204,6 +204,24 @@
 			<exclude-pattern>*\/wp-includes\/PHPMailer\/PHPMailer\.php$</exclude-pattern>
 	</rule>
 
+		<rule ref="PHPCompatibility.Constants.NewConstants.imagetype_heifFound">
+			<!-- Polyfill for Backwards Compatibility with PHP < 8.5
+			     Constant is set in `wp-includes/compat.php` -->
+			<exclude-pattern>*\/wp-includes\/media\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.FunctionUse.NewFunctions.array_firstFound">
+			<!-- Polyfill for Backwards Compatibility with PHP < 8.5
+			     Constant is set in `wp-includes/compat.php` -->
+			<exclude-pattern>*\/wp-includes\/formatting\.php$</exclude-pattern>
+		</rule>
+
+		<rule ref="PHPCompatibility.Lists.AssignmentOrder.Affected">
+			<!-- Polyfill for Backwards Compatibility with PHP < 8.5
+			     Constant is set in `wp-includes/compat.php` -->
+			<exclude-pattern>*\/wp-includes\/ID3\/module.audio-video\.quicktime\.php$</exclude-pattern>
+		</rule>
+
 		<!--
 			Guzzle (https://github.com/guzzle/)
 		-->

@@ -1,37 +1,51 @@
 {
     "name": "vatu/php-compatibility-config",
     "description": "This package provides a configuration file for PHP Compatibility to be used to check projects against versions of PHP.",
-    "type": "phpcodesniffer-standard",
     "license": "MIT",
+    "type": "phpcodesniffer-standard",
     "authors": [
         {
             "name": "Michael Bragg",
             "email": "mike@vatu.dev"
         }
     ],
-    "minimum-stability": "stable",
-    "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "*",
-        "phpcsstandards/phpcsdevtools": "^1.0",
-        "phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
-        "phpcompatibility/phpcompatibility-all": "1.1.3"
+    "require": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.2",
+        "phpcompatibility/php-compatibility": "^10.0.0@dev",
+        "phpcompatibility/phpcompatibility-paragonie": "^2.0.0@dev",
+        "phpcompatibility/phpcompatibility-passwordcompat": "^2.0.0@dev",
+        "phpcompatibility/phpcompatibility-wp": "^3.0.0@dev"
     },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.49"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "config": {
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true
         },
         "lock": false
     },
-    "scripts": {
-      "tests" :[
-        "vendor/bin/phpcs ./tests/index.php --standard=phpcompatibility.dist.xml"
-      ],
-      "phpcs-config": [
-        "vendor/bin/phpcs --config-set ignore_warnings_on_exit 1"
-      ]
+    "extra": {
+        "normalize": {
+            "indent-size": 4,
+            "indent-style": "space"
+        }
     },
-    "require": {
-        "phpcompatibility/phpcompatibility-wp": "^2.1",
-        "squizlabs/php_codesniffer": "^3.11"
+    "scripts": {
+        "fix": [
+            "@composer fix:normalize"
+        ],
+        "fix:normalize": [
+            "@composer normalize"
+        ],
+        "phpcs-config": [
+            "vendor/bin/phpcs --config-set ignore_warnings_on_exit 1"
+        ],
+        "test": [
+            "vendor/bin/phpcs ./tests/index.php --standard=phpcompatibility.dist.xml"
+        ]
     }
 }

@@ -1,3 +1,8 @@
+# System
+
+error_log
+.DS_Store
+
 ## Composer
 composer.lock
 /vendor
